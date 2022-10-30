@@ -1,22 +1,16 @@
-import { LitElement, css, html } from "lit";
-import { customElement, property } from "lit/decorators.js";
-
-/**
- * An example element.
- *
- * @slot - This element has a slot
- * @csspart button - The button
- */
-@customElement("my-element")
-export class MyElement extends LitElement {
-  /**
-   * The number of times the button has been clicked.
-   */
-  @property({ type: Number })
-  count = 0;
-
+import { css as a, LitElement as d, html as l } from "lit";
+import { property as m, customElement as p } from "lit/decorators.js";
+var b = Object.defineProperty, f = Object.getOwnPropertyDescriptor, u = (s, o, n, r) => {
+  for (var t = r > 1 ? void 0 : r ? f(o, n) : o, i = s.length - 1, c; i >= 0; i--)
+    (c = s[i]) && (t = (r ? c(o, n, t) : c(t)) || t);
+  return r && t && b(o, n, t), t;
+};
+let e = class extends d {
+  constructor() {
+    super(...arguments), this.count = 0;
+  }
   render() {
-    return html`
+    return l`
       <div class="card">
         <button @click=${this._onClick} part="button">
           count is ${this.count}
@@ -24,12 +18,11 @@ export class MyElement extends LitElement {
       </div>
     `;
   }
-
-  private _onClick() {
+  _onClick() {
     this.count++;
   }
-
-  static styles = css`
+};
+e.styles = a`
     :host {
       max-width: 1280px;
       margin: 0 auto;
@@ -66,10 +59,9 @@ export class MyElement extends LitElement {
       }
     }
   `;
-}
-
-declare global {
-  interface HTMLElementTagNameMap {
-    "my-element": MyElement;
-  }
-}
+u([
+  m({ type: Number })
+], e.prototype, "count", 2);
+e = u([
+  p("my-element")
+], e);

@@ -1,13 +1,13 @@
 {
-  "name": "vite-project",
+  "name": "vite-modal",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "dist/my-element.es.js",
+  "main": "dist/vite-modal.js",
   "exports": {
-    ".": "./dist/my-element.es.js"
+    ".": "./dist/vite-modal.js"
   },
-  "types": "types/my-element.d.ts",
+  "types": "types/vite-modal.d.ts",
   "files": [
     "dist",
     "types"
@@ -18,7 +18,8 @@
   },
   "dependencies": {
     "body-scroll-lock": "4.0.0-beta.0",
-    "lit": "^2.3.1"
+    "lit": "^2.3.1",
+    "vite-modal": "git+https://github.com/un-T-ieda/221025.sample-component"
   },
   "devDependencies": {
     "@types/body-scroll-lock": "^3.1.0",
