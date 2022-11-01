@@ -265,7 +265,7 @@ typescript@^4.6.4:
 
 "vite-modal@git+https://github.com/un-T-ieda/221025.sample-component":
   version "0.0.0"
-  resolved "git+https://github.com/un-T-ieda/221025.sample-component#eb51f1a98bfe8d195c8a0d441d8dd13f10012509"
+  resolved "git+https://github.com/un-T-ieda/221025.sample-component#43e60e060bb557e36ff3a9cd3f7acded7ea9cc33"
   dependencies:
     body-scroll-lock "4.0.0-beta.0"
     lit "^2.3.1"
