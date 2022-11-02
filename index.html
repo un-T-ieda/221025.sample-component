@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Lit + TS</title>
-    <link rel="stylesheet" href="./src/index.css" />
-    <script type="module" src="/src/vite-modal.ts"></script>
-  </head>
-  <body>
-    <my-element>
-      <h1>Vite + Lit</h1>
-    </my-element>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + Lit + TS</title>
+  <link rel="stylesheet" href="./src/index.css" />
+  <script type="module" src="/src/vite-modal.ts"></script>
+</head>
+
+<body>
+  <section class="flex">
+    <button class="js-button" type="button" aria-controls="dialog-1">ボタン</button>
+    <a href="/">test</a>
+    <a href="/">test</a>
+    <a href="/">test</a>
+    <a href="/">test</a>
+    <a href="/">test</a>
+    <dialog class="dialog -closing js-dialog" id="dialog-1">
+      <div class="dialog__content js-dialog-content">
+        <h2 class="dialog__title">タイトル</h2>
+        <p class="dialog__text">テキスト</p>
+        <button class="js-close-button" type="button" aria-controls="dialog-1">閉じる</button>
+        <button class="js-close-button" type="button" aria-controls="dialog-1">閉じる</button>
+      </div>
+    </dialog>
+    <a href="/">test</a>
+    <a href="/">test</a>
+    <a href="/">test</a>
+    <a href="/">test</a>
+    <a href="/">test</a>
+  </section>
+</body>
+
 </html>
